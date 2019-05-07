@@ -10,7 +10,6 @@ BUSINESS IDEA:
 Goal of current project to give possibility to create BDD API Test Framework basing on standard modules, utlis, BDD steps and create map of APITestObjects basing on swagger description.
 So base functionality and checks will be created not in one month, but in 2 hours - so this project will save up to 8000 USD per project (money that spends on salary of 1-2 persons + taxes + office workplace + outsourcing company fee).
 
-
 WORKFLOW:
 
 1) Install component globally (npm i bdd-api-test-framework-creator -g)
@@ -32,7 +31,6 @@ It will:
  (create, select, selectBy, selectWithParams, update)
 10) add node_modules and reports folders to gitignore exceptions
 
-CONGRATULATIONS! Now You are ready to implement your features in tests
 PACKAGES LIST:
 
  Library name
@@ -54,7 +52,6 @@ Gives possibility to make more easy work with strings, arrays, ...
 Testrail-api
 Gives integration with test-cases management system Test-Rail
  
-
 Test Folder Structure:
 
 /root
@@ -75,8 +72,7 @@ Test Folder Structure:
 			/groupedPreconditions/
 	/reports
 
-
-apiTestObjectTemplate:
+ApiTestObjectTemplate:
 
 const fetch = require(‘node-fetch’);
 	const testData = require(<pathToTestData>)
@@ -200,7 +196,6 @@ Then I see that response should be as follows
 | some field1 			| current value |
 | some field2 > child field 	| current value |
 
-# the same as previous but for arrays
 Then I see that for “response field” field each element in response should be as follows
 	| Field Name 			| Value  	  |
 | some field1 			| current value |
@@ -213,7 +208,6 @@ Then I see that response should match to such requirements
 	| some field3			| exists 		| true		  |
 	| Some field4 		| more then 		| current value |
 
-# the same as previous, but for arrays
 Then I see that for “field name” field each element in response should match to such requirements
 	| Field Name			| assertion method 	| value 	  |
 	| some field1			| equals 		| current value |
